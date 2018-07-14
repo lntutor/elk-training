@@ -15,7 +15,7 @@
 
 ## Installation
 
-	$ sudo docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
+	$ docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
 
  **Note** – The whole ELK stack will be started.
 
@@ -26,7 +26,7 @@ This command publishes the following ports, which are needed for proper operatio
 
 ## Start Logstash to consume Stdin log:
 
-	$ sudo docker exec -it elk /bin/bash
+	$ docker exec -it elk /bin/bash
 
 At the prompt, enter:
 
