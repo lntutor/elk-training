@@ -72,4 +72,5 @@ You can now browse to Kibana's web interface at `http://localhost:5601`
 
 ## Reference:
 
-* https://github.com/spujadas/elk-docker/edit/master/docs/index.md
+* https://github.com/spujadas/elk-docker/blob/master/docs/index.md
+* https://logz.io/blog/cryptocurrency-tracking-elk-stack/
