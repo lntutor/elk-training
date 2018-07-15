@@ -55,14 +55,16 @@ You can now browse to Kibana's web interface at `http://localhost:5601`
 ## Start Logstash to consume Binance ticker API
 
 *  Copy `binance.conf` content by create a new file then run this command:
-
-	`$ /opt/logstash/bin/logstash --path.data /tmp/logstash/data -f binance.conf`
+        ```
+	$ /opt/logstash/bin/logstash --path.data /tmp/logstash/data -f binance.conf
+        ```
 
 ## Start Logstash to consume Coinmarketcap ticker API
 
 *  Copy `coinmarketcap.conf` content by create a new file then run this command:
-
-	`$ /opt/logstash/bin/logstash --path.data /tmp/logstash/data -f coinmarketcap.conf`
+        ```
+	$ /opt/logstash/bin/logstash --path.data /tmp/logstash/data -f coinmarketcap.conf
+	```
 
 ## Result:
 
