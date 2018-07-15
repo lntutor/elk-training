@@ -30,7 +30,7 @@ This command publishes the following ports, which are needed for proper operatio
 
 At the prompt, enter:
 
-	# /opt/logstash/bin/logstash --path.data /tmp/logstash/data \
+	$ /opt/logstash/bin/logstash --path.data /tmp/logstash/data \
 		-e 'input { stdin { } } output { elasticsearch { hosts => ["localhost"] } }'
 
   **Note** – You can create as many entries as you want. Use `^C` to go back to the bash prompt.
