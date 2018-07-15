@@ -15,7 +15,7 @@
 
 ## Installation
 
-	$ docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
+	$ docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 --name elk -d sebp/elk
 
  **Note** – The whole ELK stack will be started.
 
@@ -52,6 +52,21 @@ If you browse to `http://localhost:9200/_search?pretty`
 
 You can now browse to Kibana's web interface at `http://localhost:5601`
 
+## Start Logstash to consume Binance ticker API
+
+*  Copy `binance.conf` content by create a new file then run this command:
+
+	$ /opt/logstash/bin/logstash --path.data /tmp/logstash/data -f binance.conf
+
+## Start Logstash to consume Coinmarketcap ticker API
+
+*  Copy `coinmarketcap.conf` content by create a new file then run this command:
+
+	$ /opt/logstash/bin/logstash --path.data /tmp/logstash/data -f coinmarketcap.conf
+
+## Result:
+
+   ![Screenshot](coinmarketcap.png)
 
 ## Reference:
 
