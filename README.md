@@ -1,4 +1,4 @@
-# Guideline how to set up a ELK at localhost
+# Guideline to set up an ELK at localhost
 
 
 
